@@ -1,0 +1,34 @@
+\documentclass[a4paper,punct,space,fancyhdr,fntef,UTF8]{ctexart}
+
+\usepackage{szutils}
+\input{data/meta}
+
+\begin{document}
+
+	\pagestyle{empty}
+	\include{data/cover}
+	\include{data/statement}
+
+	\zihao{-4}
+	\tableofcontents
+	\thispagestyle{empty}
+	\ctexset{section={format=\Large\bfseries}}
+
+	\cfoot{\zihao{-5}第 \ \thepage \ 页 \ 共 \ \pageref{lastpage} 页}
+	\zihao{5}
+	\pagenumbering{arabic}
+	\setcounter{page}{0}
+	\pagestyle{fancy}
+
+	\include{data/cnabstract}
+@@CHAPTER_INCLUDES@@
+
+	\kaishu
+	\bibliographystyle{plain}
+	\addcontentsline{toc}{section}{参考文献}
+	\bibliography{ref/references}
+
+	\fangsong
+	\include{data/acknowledgement}
+	\include{data/enabstract}
+\end{document}

@@ -1,0 +1,70 @@
+\ProvidesPackage{szutils}
+
+\usepackage[headheight=13pt,top=0.9cm,bottom=2.5cm,left=3cm,right=2cm,includehead,includefoot]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[namelimits]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[super,square,compress,sort]{natbib}
+\usepackage[linesnumbered,boxed,ruled,commentsnumbered]{algorithm2e}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage[font=small]{caption}
+\usepackage{makecell}
+\usepackage{url}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+
+\usepackage[colorlinks=true,
+linkcolor=black,
+anchorcolor=black,
+citecolor=black
+]{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{深圳大学本科毕业论文 \quad \ThesisHeaderTitle}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headwidth}{\textwidth}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{titletoc}
+\titlecontents{section}[0mm]
+{\fontsize{12pt}{20pt}\selectfont \CJKfamily{song}}
+{\filleft\contentslabel{1em}}
+{\hspace*{-1em}}
+{\titlerule*{.}\contentspage}
+
+\titlecontents{subsection}[10mm]
+{\fontsize{12pt}{20pt}\selectfont \CJKfamily{song}}
+{\contentslabel{2em}}
+{\hspace*{-2em}}
+{\titlerule*{.}\contentspage}
+
+\titlecontents{subsubsection}[20mm]
+{\fontsize{12pt}{20pt}\selectfont \CJKfamily{song}}
+{\contentslabel{3em}}
+{\hspace*{-3em}}
+{\titlerule*{.}\contentspage}
+
+\addtolength{\parskip}{.5em}
+
+\ctexset{
+	contentsname={目 \quad 录},
+	bibname={\kaishu\zihao{5}\textbf{【 参考文献】}}
+}
+
+\renewcommand{\algorithmcfname}{算法}
+
+\DeclareGraphicsExtensions{.eps,.ps,.png,.jpg}
+\graphicspath{{graphics/}}
+
+\endinput

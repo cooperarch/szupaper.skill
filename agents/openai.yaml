@@ -1,0 +1,4 @@
+interface:
+  display_name: "深圳大学本科毕业论文"
+  short_description: "Scaffold, write, and compile SZUthesis XeLaTeX projects"
+  default_prompt: "Use $szuthesis to scaffold or revise my Shenzhen University undergraduate thesis and compile a checked PDF."
